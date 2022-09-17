@@ -7,15 +7,15 @@ $(document).ready(function (){
     $.ajax({
         url:'https://api.github.com/users/'+username,
     data:{
-        client_id:'c49570a2deab792d38ea',
-        client_secret:'d03e41b396d22b9cdce845e13b2c88c09abeb6b3'
+        client_id:'write your id',
+        client_secret:'write your client secret'
     }
     }).done(function(user){
     $.ajax({
     url:'https://api.github.com/users/'+username + '/repos',
     data:{
-        client_id:'c49570a2deab792d38ea',
-        client_secret:'d03e41b396d22b9cdce845e13b2c88c09abeb6b3',
+        client_id:'write your id',
+        client_secret:'write your client secret',
         sort:'created:asc',
         per_page:5
     }
